@@ -8,17 +8,17 @@ function Product({product}) {
     const classes = useStyles()
     return(
         <Card className={classes.root}>
-            <CardMedia className={classes.media} />
+            <CardMedia className={classes.media} name={product.name} image={product.image} />
             <CardContent>
                 <div className={classes.cardContent}>
-                    <Typography variant="h5">
+                    <Typography variant="h6">
                         {product.name}
                     </Typography>
                     <Typography variant="h5">
                         {product.price}
                     </Typography>
                 </div>
-                <Typography variant="h2" color="textSecondary">Meant for {product.type}</Typography>
+                <Typography variant="h6" color="textSecondary">For {product.type}</Typography>
             </CardContent>
             <CardActions disableSpacing class="classes.cardActions">
                 <IconButton aria-label="Buy">
