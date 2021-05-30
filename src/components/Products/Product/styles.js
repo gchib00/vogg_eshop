@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 export default makeStyles(() => ({
     root: {
-      height: 300,
+      height: 400,
       width: 320,
     },
     media: {
@@ -19,5 +19,13 @@ export default makeStyles(() => ({
     buttons: {
       display: 'flex',
       alignItems: 'center',
+    },
+    description: {
+      fontSize: 13
+    },
+    shoppingcartBtn: {
+      position: 'relative',
+      left: 260,
+      color: 'green',
     },
   }));
