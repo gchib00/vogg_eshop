@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
+import { Grid, Button } from '@material-ui/core'
 import Product from './Product/Product'
 import useStyles from "./styles"
 
@@ -8,6 +8,13 @@ function Products({products, onAddToCart}) {
     return(
         <main className={classes.content} >
             <div className={classes.toolbar} />
+            <div className={classes.genderfilterContainer}>
+                <div className={classes.genderFilter}>
+                    <Button className={classes.genderBtn}>All</Button>
+                    <Button className={classes.genderBtn}>Male</Button>
+                    <Button className={classes.genderBtn}>Female</Button>
+                </div>
+            </div>
             <Grid container justify="center" spacing={4}>
                 {products.map((product) => (
                     <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>

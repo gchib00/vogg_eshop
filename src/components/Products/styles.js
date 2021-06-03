@@ -12,4 +12,12 @@ export default makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  genderfilterContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'centrer',
+  },
+  genderFilter: {
+    border: '2px solid black'
+  }
 }));

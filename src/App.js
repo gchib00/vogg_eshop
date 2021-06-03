@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Products from './components/Products/Products';
 import Navbar from './components/Navbar/Navbar'
 import Cart from './components/Cart/Cart'
+import Checkout from './components/CheckoutForm/Checkout/Checkout'
 
 
 function App() {
@@ -63,6 +64,9 @@ function App() {
                             handleRemoveItem={handleRemoveItem}
                             handleEmptyCart={handleEmptyCart}
                         />
+                    </Route>
+                    <Route exact path='/checkout'>
+                        <Checkout />
                     </Route>
                 </Switch>
             </div>

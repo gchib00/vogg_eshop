@@ -51,7 +51,9 @@ function Cart ({ cart, handleUpdateCartQuantity, handleRemoveItem, handleEmptyCa
                             type='button' 
                             size='large'
                             color='primary'
-                            variant='contained'>
+                            variant='contained'
+                            component={Link} to='/checkout'
+                            >
                                 Checkout
                         </Button>
                     </div>

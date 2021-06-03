@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Menu, MenuItem, Badge, IconButton, Toolbar, AppBar } from '@material-ui/core'
+import { Typography, Button, Badge, IconButton, Toolbar, AppBar } from '@material-ui/core'
 import { ShoppingCart } from '@material-ui/icons'
 import { Link, useLocation } from 'react-router-dom'
 
@@ -17,18 +17,18 @@ function Navbar({ totalItems }) {
                     <Typography component={Link} to='/'>
                         <img src={logo} alt="Vogg" height="100px" className={classes.image}/>
                     </Typography>
+
                     <div className={classes.grow} />
 
                     {location.pathname !== '/cart' ? (  // if user is on the cart page, they won't be show the cart icon
-                    <div className={classes.button}>
-                        <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit'>
+                    <div>
+                        <IconButton component={Link} to='/cart' aria-label='Show cart items' color='grey'>
                             <Badge badgeContent={totalItems} color="secondary">
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
                     </div>
                     ) : null }
-
                 </Toolbar>
             </AppBar>
         </div>
