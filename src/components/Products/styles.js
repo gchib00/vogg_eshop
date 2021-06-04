@@ -18,6 +18,56 @@ export default makeStyles((theme) => ({
     alignItems: 'centrer',
   },
   genderFilter: {
-    border: '2px solid black'
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'centrer',
+    marginBottom: 40,
+  },
+  option1: {
+    textAlign: 'center',
+    width: 80,
+    padding: 12,
+
+    border: '2px #828282 solid',
+    borderTopLeftRadius: 14,
+    borderBottomLeftRadius: 14,
+    boxShadow: '0px 1px 0px 0px #d1d1d1',
+
+    '&:hover': {
+      backgroundColor: '#828282',
+      color: 'white',
+      transition: '250ms',
+    },
+  },
+  option2: {
+    textAlign: 'center',
+    width: 80,
+    padding: 12,
+
+    borderTop: '2px #828282 solid',
+    borderBottom: '2px #828282 solid',
+    boxShadow: '0px 1px 0px 0px #d1d1d1',
+
+    '&:hover': {
+      backgroundColor: '#828282',
+      color: 'white',
+      transition: '250ms',
+    },
+  },
+  option3: {
+    textAlign: 'center',
+    width: 80,
+    padding: 12,
+
+    border: '2px #828282 solid',
+    borderTopRightRadius: 14,
+    borderBottomRightRadius: 14,
+    boxShadow: '0px 1px 0px 0px #d1d1d1',
+
+    '&:hover': {
+      backgroundColor: '#828282',
+      color: 'white',
+      transition: '250ms',
+    },
   }
 }));
