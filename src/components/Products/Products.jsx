@@ -79,20 +79,11 @@ function Products({products, onAddToCart}) {
                 </div>
             </div>
             <Grid container justify="center" spacing={4}>
-
-                    {renderArray.map((product) => (
-                        <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
-                            <Product product={product} onAddToCart={onAddToCart} />
-                        </Grid>  
-                    ))}
-
-                    
-
-
-                
-\
-
-
+                {renderArray.map((product) => (
+                    <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
+                        <Product product={product} onAddToCart={onAddToCart} />
+                    </Grid>  
+                ))}
             </Grid>
         </main>
     )
