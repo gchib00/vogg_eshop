@@ -11,15 +11,30 @@ const steps = ['Shipping address', 'Payment details']
 function Checkout() {
     const classes = useStyles()
     const [activeStep, setActiveStep] = useState(0)
-    
+    const [shippingData, setShippingData] = useState({})
+
     function Form() {
         return(
         (activeStep === 0) ? 
-            <AddressForm />
+            <AddressForm next={next}/>
         :
-            <PaymentForm />
+            <PaymentForm shippingData={shippingData} />
     
         )
+    }
+
+    function next(data) {
+        setShippingData(data)
+        nextStep()
+    }
+
+    function nextStep() {
+        setActiveStep((prevStep) => prevStep+1)
+    }
+    function backStep() {
+        if (activeStep > 0) {
+            setActiveStep((prevStep) => prevStep-1)
+        }
     }
 
     function Confirmation() {
@@ -43,7 +58,7 @@ function Checkout() {
                             </Step>
                         )}
                     </Stepper>
-                    { (activeStep === activeStep.length) ? <Confirmation /> : <Form /> }
+                    { (activeStep === 2) ? <Confirmation /> : <Form /> }
                 </Paper>
             </main>
         </div>
