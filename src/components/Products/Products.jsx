@@ -51,7 +51,6 @@ function Products({products, onAddToCart}) {
                             name='genderRadioGroup' 
                             value='All'  
                             checked={gender === 'All'} 
-                            id='test1'
                             onChange={handleChange}
                             style={{display: 'none'}}
                             />ყველა
@@ -78,9 +77,16 @@ function Products({products, onAddToCart}) {
                     </label>
                 </div>
             </div>
-            <Grid container justify="center" spacing={4}>
+            <Grid container
+                style={{ 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center',
+                    margin: '0px',
+                    boxSizing: 'border-box',
+                }}>
                 {renderArray.map((product) => (
-                    <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
+                    <Grid item key={product.id} xs={12} sm={5} md={3} lg={2} style={{ margin: '2rem' }}>
                         <Product product={product} onAddToCart={onAddToCart} />
                     </Grid>  
                 ))}

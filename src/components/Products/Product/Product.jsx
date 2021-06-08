@@ -21,7 +21,7 @@ function Product({ product, onAddToCart }) {
                 <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="textSecondary" className={classes.description} />
             </CardContent>
             <CardActions disableSpacing class="classes.cardActions">
-                <IconButton aria-label="Buy" className={classes.shoppingcartBtn} onClick={() => onAddToCart(product.id, 1)}>
+                <IconButton aria-label="Buy" className={classes.shoppingcartBtn}>
                     <AddShoppingCart />
                 </IconButton>
             </CardActions>

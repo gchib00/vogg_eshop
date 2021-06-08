@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography, Button, Badge, IconButton, Toolbar, AppBar } from '@material-ui/core'
-import { ShoppingCart } from '@material-ui/icons'
-import { Link, useLocation } from 'react-router-dom'
+// import { ContactSupportIcon } from '@material-ui/icons'
+import ContactSupportIcon from '@material-ui/icons/ContactSupport'
 
 import logo from '../../assets/logo.png'
 import useStyles from './styles'
@@ -9,26 +9,19 @@ import useStyles from './styles'
 
 function Navbar({ totalItems }) {
     const classes = useStyles()
-    const location = useLocation()
     return(
         <div>
             <AppBar className={classes.appBar} color='inherit'>
                 <Toolbar>
-                    <Typography component={Link} to='/'>
+                    <Typography style={{ marginBottom:'-6px' }}>
                         <img src={logo} alt="Vogg" height="100px" className={classes.image}/>
                     </Typography>
 
                     <div className={classes.grow} />
 
-                    {location.pathname !== '/cart' ? (  // if user is on the cart page, they won't be show the cart icon
-                    <div>
-                        <IconButton component={Link} to='/cart' aria-label='Show cart items' color='grey'>
-                            <Badge badgeContent={totalItems} color="secondary">
-                                <ShoppingCart />
-                            </Badge>
-                        </IconButton>
-                    </div>
-                    ) : null }
+                    <IconButton>
+                            <ContactSupportIcon fontSize='large' color='action' />
+                    </IconButton>
                 </Toolbar>
             </AppBar>
         </div>

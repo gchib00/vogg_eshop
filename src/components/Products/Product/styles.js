@@ -4,10 +4,15 @@ export default makeStyles(() => ({
     root: {
       height: 400,
       width: 320,
+      '&:hover': {
+        boxShadow: '0px 5px 4px 1px rgb(0 0 0 / 40%)',
+      },
+      maxWidth: '100%',
+      marginBottom: '20px',
     },
     media: {
       height: 200,
-      width: 320,
+      maxWidth: '100%',
     },
     cardContent: {
       display: 'flex',

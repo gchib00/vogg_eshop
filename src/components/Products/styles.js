@@ -15,13 +15,17 @@ export default makeStyles((theme) => ({
   genderfilterContainer: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'centrer',
+    alignItems: 'center',
   },
   genderFilter: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'centrer',
+    alignItems: 'center',
     marginBottom: 40,
+    '@media(max-width: 340px)': {
+      width: '300px',
+    },
+    borderSize: 'border-box',
   },
   option1: {
     textAlign: 'center',
