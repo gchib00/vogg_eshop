@@ -22,14 +22,22 @@
 .contact {
     margin-top: 20px;
 }
+.facebookBtn {
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
 
 
 @media screen and (max-width: 1230px) {
     .footer {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 26% 44% 20%;
-        gap: 4rem;
+        grid-template-rows: 36% 34% 20%;
+        gap: 3rem;
     
         position: relative;
         width: 90%;

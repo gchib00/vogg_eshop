@@ -87,7 +87,7 @@ function Products({products, onAddToCart}) {
                 }}>
                 {renderArray.map((product) => (
                     <Grid item key={product.id} xs={12} sm={5} md={3} lg={2} style={{ margin: '2rem' }}>
-                        <Product product={product} onAddToCart={onAddToCart} />
+                        <Product product={product} />
                     </Grid>  
                 ))}
             </Grid>

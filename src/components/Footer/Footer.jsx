@@ -1,5 +1,6 @@
-import { Typography, Divider } from '@material-ui/core'
 import React from 'react'
+import { Typography, Divider, IconButton } from '@material-ui/core'
+import FacebookIcon from '@material-ui/icons/Facebook'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import css from './Footer.module.css'
 
@@ -43,9 +44,14 @@ function Footer() {
                         კონტაქტი
                     </Typography>
                     <br />
-                    <p><strong>E-mail: </strong>voggshoesmaker@gmail.com</p>
+                    <p><strong>ტელ: </strong>+995 32 221 29 01</p>
                     <Divider />
-                    <p><strong>Tel: </strong>+995 32 221 29 01</p>
+                    <p><strong>E-mail: </strong>voggshoesmaker@gmail.com</p>
+                    <div className={css.facebookBtn}>
+                        <IconButton onClick={() => window.open('https://www.facebook.com/VOGGShoesmaker/')}>
+                            <FacebookIcon fontSize='large' />
+                        </IconButton>
+                    </div>
                 </div>
                 <div className={css.placeHolder}></div>
             </footer>
