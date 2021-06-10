@@ -9,12 +9,14 @@ function Footer() {
     return(
         <div>
             <footer className={css.footer}>
-                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} height='200px'>
+                <MapContainer center={[41.7547879, 44.7866833,]} zoom={10} scrollWheelZoom={true}>
                     <TileLayer 
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={[51.505, -0.09]} />
+                    <Marker position={[41.72001426801937, 44.77638361712727]} />
+                    <Marker position={[41.81675319526235, 44.772420444257584]} />
+                    <Marker position={[41.71039214615007, 44.79684627671317]} />
                 </MapContainer>
                 <div className={css.addresses}>
                     <Typography align='left' style={{ fontWeight: 'bold' }}>
@@ -45,6 +47,7 @@ function Footer() {
                     <Divider />
                     <p><strong>Tel: </strong>+995 32 221 29 01</p>
                 </div>
+                <div className={css.placeHolder}></div>
             </footer>
         </div>
     )

@@ -49,4 +49,7 @@
     .contact {
         margin: 10px;
     }
+    .placeHolder {
+        height: 1px;
+    }
 }
