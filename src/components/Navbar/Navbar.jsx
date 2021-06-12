@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Button, Badge, IconButton, Toolbar, AppBar } from '@material-ui/core'
+import { Typography, IconButton, Toolbar, AppBar } from '@material-ui/core'
 // import { ContactSupportIcon } from '@material-ui/icons'
 import ContactSupportIcon from '@material-ui/icons/ContactSupport'
 

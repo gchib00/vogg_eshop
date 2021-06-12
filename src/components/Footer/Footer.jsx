@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography, Divider, IconButton } from '@material-ui/core'
 import FacebookIcon from '@material-ui/icons/Facebook'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import css from './Footer.module.css'
 
 

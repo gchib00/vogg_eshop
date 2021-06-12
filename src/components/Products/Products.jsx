@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Grid, Button } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import Product from './Product/Product'
 import useStyles from "./styles"
 
@@ -40,6 +40,8 @@ function Products({products, onAddToCart}) {
         setGender(event.target.value)
     }
     ////////////////////////////////////////////////////////
+
+
     return(
         <main className={classes.content} >
             <div className={classes.toolbar} />

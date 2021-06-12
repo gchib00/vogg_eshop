@@ -33,4 +33,16 @@ export default makeStyles(() => ({
       left: 260,
       color: 'green',
     },
+
+    modal: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    zoomedImage: {
+      width: '80vw',
+      height: '66vh',
+    },
+
+
   }));
