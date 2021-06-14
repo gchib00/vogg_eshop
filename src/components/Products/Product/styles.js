@@ -2,8 +2,8 @@ import { makeStyles } from '@material-ui/core/styles'
 
 export default makeStyles(() => ({
     root: {
-      height: 400,
-      width: 320,
+      minHeight: 360,
+      minWidth: 260,
       '&:hover': {
         boxShadow: '0px 5px 4px 1px rgb(0 0 0 / 40%)',
       },
@@ -18,8 +18,9 @@ export default makeStyles(() => ({
       display: 'flex',
       justifyContent: 'space-between',
     },
-    cartActions: {
-      justifyContent: 'space-between',
+    cardActions: {
+      display: 'flex',
+      justifyContent: 'flex-end',
     },
     buttons: {
       display: 'flex',
@@ -28,12 +29,6 @@ export default makeStyles(() => ({
     description: {
       fontSize: 13
     },
-    shoppingcartBtn: {
-      position: 'relative',
-      left: 260,
-      color: 'green',
-    },
-
     modal: {
       display: 'flex',
       justifyContent: 'center',
@@ -47,7 +42,7 @@ export default makeStyles(() => ({
         width: '90vw',
         height: '90vh',
       },
-      '@media(max-width: 430px)': {
+      '@media(max-width: 490px)': {
         width: '90vw',
         height: '40vh',
       },

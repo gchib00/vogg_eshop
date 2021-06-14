@@ -1,6 +1,6 @@
 import React, {useState}  from 'react'
-import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Modal, Button } from '@material-ui/core'
-import { AddShoppingCart } from '@material-ui/icons'
+import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Modal, Fade } from '@material-ui/core'
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary'
 import useStyles from './styles'
 
 
@@ -18,8 +18,10 @@ function Product({ product, onAddToCart }) {
     function Zoom() {
         if (zoom) {
             return (
-                <Modal open={zoom} onClick={handleClick} className={classes.modal} >
-                    <img src={product.media.source} className={classes.zoomedImage} alt="zoomed" />
+                <Modal open={zoom} onClick={handleClick} className={classes.modal} closeAfterTransition>
+                    <Fade in={true} timeout={{ enter: '500ms'}}>
+                        <img src={product.media.source} className={classes.zoomedImage} alt="zoomed" />
+                    </Fade>
                 </Modal>
             )
         } else {
@@ -31,8 +33,8 @@ function Product({ product, onAddToCart }) {
     /////////////////////////////////
     return(
         <>
-            <Card className={classes.root} onClick={handleClick} >
-                <CardMedia className={classes.media} title={product.name} image={product.media.source} />
+            <Card className={classes.root} >
+                <CardMedia className={classes.media} title={product.name} image={product.media.source} onClick={handleClick} />
                 <CardContent>
                     <div className={classes.cardContent}>
                         <Typography variant="h6">
@@ -45,8 +47,8 @@ function Product({ product, onAddToCart }) {
                     <Typography dangerouslySetInnerHTML={{ __html: product.description }} color="textSecondary" className={classes.description} />
                 </CardContent>
                 <CardActions disableSpacing className={classes.cardActions}>
-                    <IconButton aria-label="Buy" className={classes.shoppingcartBtn}>
-                        <AddShoppingCart />
+                    <IconButton aria-label="Buy" className={classes.shoppingcartBtn} onClick={handleClick}>
+                        <PhotoLibraryIcon />
                     </IconButton>
                 </CardActions>
             </Card>
