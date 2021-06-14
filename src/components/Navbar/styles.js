@@ -59,4 +59,9 @@ export default makeStyles((theme) => ({
       width: '20ch',
     },
   },
+  facebookBtn: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+
+  },
 }));

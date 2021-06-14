@@ -1,8 +1,7 @@
 import React from 'react'
 import { Typography, IconButton, Toolbar, AppBar } from '@material-ui/core'
 // import { ContactSupportIcon } from '@material-ui/icons'
-import ContactSupportIcon from '@material-ui/icons/ContactSupport'
-
+import FacebookIcon from '@material-ui/icons/Facebook'
 import logo from '../../assets/logo.png'
 import useStyles from './styles'
 
@@ -19,9 +18,11 @@ function Navbar({ totalItems }) {
 
                     <div className={classes.grow} />
 
-                    <IconButton>
-                            <ContactSupportIcon fontSize='large' color='action' />
-                    </IconButton>
+                    <div className={classes.facebookBtn}>
+                        <IconButton onClick={() => window.open('https://www.facebook.com/VOGGShoesmaker/')}>
+                            <FacebookIcon fontSize='large' />
+                        </IconButton>
+                    </div>
                 </Toolbar>
             </AppBar>
         </div>

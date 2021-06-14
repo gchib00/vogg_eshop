@@ -27,17 +27,13 @@ function App() {
     return (
         <div>
             <Navbar />
-
             {loading ? <LoadingScreen /> :
                 <div>
                     <Products products={products} />
                     <Footer />
                 </div>
             }
-                <MessengerCustomerChat
-                    pageId="101031432228374"
-                    appId="888421265075066"
-                />
+            <MessengerCustomerChat pageId="101031432228374" appId="888421265075066" />
         </div>
     )
 

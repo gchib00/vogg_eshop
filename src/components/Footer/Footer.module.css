@@ -22,14 +22,6 @@
 .contact {
     margin-top: 20px;
 }
-.facebookBtn {
-    display: flex;
-    justify-content: flex-end;
-
-    position: relative;
-    top: 5px;
-    left: 15px;
-}
 
 
 @media screen and (max-width: 1230px) {
