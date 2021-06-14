@@ -37,7 +37,6 @@ export default makeStyles(() => ({
     zoomedImage: {
       width: '800px',
       height: '800px',
-      border: '3px solid black',
       '@media(max-width: 1000px)': {
         width: '90vw',
         height: '90vh',

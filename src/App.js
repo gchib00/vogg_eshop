@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { commerce } from './lib/commerce'
-import ReactDOM from 'react-dom'
 
 import Products from './components/Products/Products'
 import Navbar from './components/Navbar/Navbar'
