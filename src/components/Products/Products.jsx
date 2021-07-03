@@ -55,7 +55,7 @@ function Products({products, onAddToCart}) {
                             checked={gender === 'All'} 
                             onChange={handleChange}
                             style={{display: 'none'}}
-                            />ყველა
+                            />All
                     </label>
                     <label className={classes.option2} style={{fontFamily: 'Roboto, sans-serif'}}>
                         <input 
@@ -65,7 +65,7 @@ function Products({products, onAddToCart}) {
                             checked={gender === 'Female'}
                             onChange={handleChange}    
                             style={{display: 'none'}}
-                            />ქალი
+                            />Women
                     </label>
                     <label className={classes.option3} style={{fontFamily: 'Roboto, sans-serif'}}>
                         <input 
@@ -75,7 +75,7 @@ function Products({products, onAddToCart}) {
                             checked={gender === 'Male'} 
                             onChange={handleChange} 
                             style={{display: 'none'}}  
-                            />კაცი
+                            />Men
                     </label>
                 </div>
             </div>

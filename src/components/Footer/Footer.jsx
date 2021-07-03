@@ -20,30 +20,30 @@ function Footer() {
                 </MapContainer>
                 <div className={css.addresses}>
                     <Typography align='left' style={{ fontWeight: 'bold' }}>
-                        მისამართი
+                        Locations
                     </Typography>
                     <br />
                     <div className={css.address}>
-                        <p>პეკინის გამზირი, თბილისი</p>
+                        <p>Pekini Avenue, Tbilisi</p>
                         <p>11:00 - 21:00</p>
                     </div>
                     <Divider />
                     <div className={css.address}>
-                        <p>104, დავით აღმაშენებელის გამზირი, თბილისი</p>
+                        <p>104, Pushkin Street, Tbilisi</p>
                         <p>10:30 - 21:00</p>
                     </div>
                     <Divider />
                     <div className={css.address}>
-                        <p>"თბილისი" მოლი, დავით აღმაშენებლის ხეივანი, თბილისი</p>
+                        <p>'Tbilisi Mall', David the Builder Avenue, Tbilisi</p>
                         <p>10:00 - 20:00</p>
                     </div>
                 </div>
                 <div className={css.contact}>
                     <Typography align='left' style={{ fontWeight: 'bold' }}>
-                        კონტაქტი
+                        Contact
                     </Typography>
                     <br />
-                    <p><strong>ტელ: </strong>+995 32 221 29 01</p>
+                    <p><strong>Tel.: </strong>+995 551 43 08 80</p>
                     <Divider />
                     <p><strong>E-mail: </strong>voggshoesmaker@gmail.com</p>
                 </div>
